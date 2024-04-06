@@ -7,7 +7,7 @@ import NavItem from "./NavItem";
 const NavItems = () => {
   const [activeIndex, setActiveIndex] = useState<null | number>(null);
 
-  const isAnyOpen = activeIndex !== null;
+  const isAnyOpen = activeIndex !== null; // return true and false base on value of activeIndex
 
   return (
     <div className="flex gap-4 h-full">
@@ -20,7 +20,7 @@ const NavItems = () => {
           }
         };
 
-        const isOpen = index === activeIndex;
+        const isOpen = index === activeIndex; // return true and false base on value of activeIndex == index from map
 
         return (
           <NavItem
